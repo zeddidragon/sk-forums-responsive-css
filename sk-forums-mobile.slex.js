@@ -2,7 +2,7 @@
 // @name  Spiral knights forums responsive styles
 // @author  Zeddy
 // @description Make SK forums less horrible on phones
-// @include http://forums.spiralknights.com/en/
+// @include http://forums.spiralknights.com/*
 // @version 1.0
 // ==/UserScript==
 
