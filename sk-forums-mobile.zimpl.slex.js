@@ -7,3 +7,4 @@
 // @require jquery
 // ==/UserScript==
 alert('trying to append viewport')
+alert('trying two alerts')
