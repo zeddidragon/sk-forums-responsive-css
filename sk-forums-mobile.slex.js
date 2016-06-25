@@ -9,8 +9,9 @@
 
 try {
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">')
+alert('viewport appended')
 $('head').append(`
-<style>
+<style style="display: block">
 @media (max-width: 960px) {
   /* PAGE */
   /* 
@@ -264,6 +265,7 @@ $('head').append(`
 
 </style>
 `)
+alert('stylesheet also appended')
 } catch(e) {
   alert("This went wrong: " + e.stack)
 }
