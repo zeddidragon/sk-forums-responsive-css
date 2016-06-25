@@ -7,9 +7,10 @@
 // @require jquery
 // ==/UserScript==
 
-alert(`
-this is
-a bacctick test
-and also a haiku
-maybe
+
+$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+$('head').append(`
+<style>
+//REQUIRE ./sk-forums-mobile.css REQUIRE//
+</style>
 `);
