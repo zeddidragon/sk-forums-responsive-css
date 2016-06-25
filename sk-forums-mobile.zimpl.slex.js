@@ -10,4 +10,8 @@ alert('before everything')
 //REQUIRE ./insert-viewport-tag.js REQUIRE//
 
 var css = "//REQUIRE ./sk-forums-mobile.css REQUIRE//"
+
+var style = document.createElement('style')
+document.head.appendChild('style')
+
 alert('after everything')
