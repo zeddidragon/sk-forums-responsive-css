@@ -7,6 +7,9 @@
 // @require jquery
 // ==/UserScript==
 
-
-$('head').append('<style name="viewport" content="width=device-width, initial-scale=1">');
-alert('viewport appended');
+alert(`
+this is
+a bacctick test
+and also a haiku
+maybe
+`);
