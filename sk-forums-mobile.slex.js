@@ -6,5 +6,5 @@
 // @version 1.0.3
 // @require jquery
 // ==/UserScript==
-alert('trying to append viewport')
-alert('trying two alerts')
+alert('trying to append viewport');
+alert('trying two alerts');
