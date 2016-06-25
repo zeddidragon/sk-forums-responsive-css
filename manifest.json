@@ -9,10 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "http*//spiralknights.com/*",
-        "http*//*.spiralknights.com/*"
-      ],
+      "matches": ["http://forums.spiralknights.com/*"],
       "css": ["sk-forums-mobile.css"],
       "js": ["insert-viewport-tag.js"]
     }
