@@ -6,5 +6,7 @@
 // @version 1.0.3
 // @require jquery
 // ==/UserScript==
-alert('trying to append viewport');
-alert('trying two alerts');
+
+
+$('head').append('<style name="viewport" content="width=device-width, initial-scale=1">');
+alert('viewport appended');
