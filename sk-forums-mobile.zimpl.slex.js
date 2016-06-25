@@ -5,7 +5,12 @@
 // @include http://forums.spiralknights.com/*
 // @version 1.0.1
 // @require jquery
+// @require api
 // ==/UserScript==
 
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">')
+
+SLEX_addStyle(`
+//REQUIRE ./sk-forums-mobile.css REQUIRE//
+`)
 
