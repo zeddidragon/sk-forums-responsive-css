@@ -4,14 +4,12 @@
 // @description Make SK forums less horrible on phones
 // @include http://forums.spiralknights.com/*
 // @version 1.0.3
+// @require jquery
 // ==/UserScript==
 
-var meta = document.createElement('meta');
-meta.textContent = '<meta name="viewport" content="width=device-width, initial-scale=1">';
-document.head.appendChild(meta);
-
-var styles = document.createElement('style');
-styles.textContent = '
+$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+$('head').append(`
+<style>
 //REQUIRE ./sk-forums-mobile.css REQUIRE//
-`;
-document.head.appendChild(styles)
+</style>
+`);
