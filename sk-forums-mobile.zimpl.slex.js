@@ -12,11 +12,7 @@ try {
 alert('trying to append viewport')
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">')
 alert('viewport appended')
-$('head').append(`
-<style style="display: block">
-//REQUIRE ./sk-forums-mobile.css REQUIRE//
-</style>
-`)
+$('head').append('<style style="display: block"> honk: stonk; </style>')
 alert('stylesheet also appended')
 } catch(e) {
   alert("This went wrong: " + e.stack)
