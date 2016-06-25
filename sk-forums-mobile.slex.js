@@ -6,8 +6,10 @@
 // @version 1.0.2
 // @require jquery
 // ==/UserScript==
+alert('script')
 
 try {
+alert('trying to append viewport')
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">')
 alert('viewport appended')
 $('head').append(`
