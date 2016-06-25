@@ -57,6 +57,15 @@
     min-width: initial;
   }
 
+  div#username {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #username a {
+    white-space: nowrap;
+  }
+
   /*
    * The search bar cannot hope to compete with google by a long shot.
    * Let's just hide it.

@@ -2,15 +2,17 @@
 // @name  Spiral knights forums responsive styles
 // @author  Zeddy
 // @description Make SK forums less horrible on phones
-// @include http://forums.spiralknights.com/*
+// @include http*://*.spiralknights.com/*
+// @include http*://spiralknights.com/*
 // @version 1.0.3
-// @require jquery
 // ==/UserScript==
 
+var meta = document.createElement('meta');
+meta.textContent = '<meta name="viewport" content="width=device-width, initial-scale=1">';
+document.head.appendChild(meta);
 
-$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
-$('head').append(`
-<style>
+var styles = document.createElement('style');
+styles.textContent = '
 @media (max-width: 960px) {
   /* PAGE */
   /* 
@@ -68,6 +70,15 @@ $('head').append(`
   div#drupalheader {
     width: initial;
     min-width: initial;
+  }
+
+  div#username {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #username a {
+    white-space: nowrap;
   }
 
   /*
@@ -262,5 +273,5 @@ $('head').append(`
   /* END USER POST */
 }
 
-</style>
-`);
+`;
+document.head.appendChild(styles)
