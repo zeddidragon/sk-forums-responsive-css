@@ -28,6 +28,35 @@
 
   div#header {
     padding-top: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    z-index: 10;
+    transition: transform 0.3s;
+  }
+
+  div#header:hover {
+    transform: translateX(0);
+  }
+
+  #content-header:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '☰';
+    font-size: 2em;
+    border-radius: 50% 0 0 50%;
+    width: 2em;
+    height: 2em;
+    color: white;
+    background-color: black;
+    right: 0;
+    top: 0;
+    transform: translateX(-1.8em);
   }
 
   div#my-account, div#support-language, div#username {
@@ -57,7 +86,10 @@
 
   ul#menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    float: none;
     width: initial;
     height: initial;
   }
