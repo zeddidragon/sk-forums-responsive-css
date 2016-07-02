@@ -3,7 +3,7 @@
 // @author  Zeddy
 // @description Make SK forums less horrible on phones
 // @include http://forums.spiralknights.com/*
-// @version 1.0.3
+// @version 1.1.0
 // @require jquery
 // ==/UserScript==
 

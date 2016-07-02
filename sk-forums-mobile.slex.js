@@ -3,7 +3,7 @@
 // @author  Zeddy
 // @description Make SK forums less horrible on phones
 // @include http://forums.spiralknights.com/*
-// @version 1.0.3
+// @version 1.1.0
 // @require jquery
 // ==/UserScript==
 
@@ -39,7 +39,32 @@ $('head').append(`
   /* HEADER */
 
   div#header {
-    padding-top: 2em;
+    padding-top: 0;
+  }
+
+  div#my-account, div#support-language, div#username {
+    width: initial;
+    margin-right: 0;
+  }
+
+  div#account-area {
+    position: initial;
+  }
+
+  a#logoLink {
+    display: none;
+  }
+
+  div.logos {
+    display: none;
+  }
+
+  div#username {
+    padding-top: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   ul#menu {
